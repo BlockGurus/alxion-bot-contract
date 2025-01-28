@@ -53,5 +53,5 @@ Head over to [https://soniclabs.com/faucet](https://soniclabs.com/faucet) and ge
 ### 3. Deploy
 
 ```bash
-yarn deploy --network sonic
+yarn deploy --network sonic_testnet
 ```
