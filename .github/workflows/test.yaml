@@ -33,10 +33,10 @@ jobs:
       - name: Run tests
         run: echo $PRIVATE_KEY
         env:
-          PRIVATE_KEY: ${{secrets.private_key}}
+          PRIVATE_KEY: ${{secrets.PRIVATE_KEY}}
 
       # Run tests
       - name: Run tests
         run: yarn test
         env:
-          PRIVATE_KEY: ${{secrets.private_key}}
+          PRIVATE_KEY: ${{secrets.PRIVATE_KEY}}
