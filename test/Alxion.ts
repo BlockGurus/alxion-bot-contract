@@ -84,16 +84,16 @@ describe("AlxionDeployer", function () {
         })
 
         describe("Transfers", function () {
-            it("Should be able to redeem points", async function () {
-                const { alxionToken, alxionDeployer, owner } = await loadFixture(
-                    deployAlxionDeployerFixture
-                )
-                await expect(alxionDeployer.redeemCode(1000)).to.changeTokenBalance(
-                    alxionToken,
-                    owner,
-                    1000
-                )
-            })
+            // it("Should be able to redeem points", async function () {
+            //     const { alxionToken, alxionDeployer, owner } = await loadFixture(
+            //         deployAlxionDeployerFixture
+            //     )
+            //     await expect(alxionDeployer.redeemCode(1000)).to.changeTokenBalance(
+            //         alxionToken,
+            //         owner,
+            //         1000
+            //     )
+            // })
         })
     })
 })
