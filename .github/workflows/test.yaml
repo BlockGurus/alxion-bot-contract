@@ -28,6 +28,11 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: yarn install
+      
+      - name: Debug PRIVATE_KEY
+        run: echo "PRIVATE_KEY: $PRIVATE_KEY"
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
 
       # Run tests
       - name: Run tests
