@@ -31,6 +31,7 @@ jobs:
 
       # Run tests
       - name: Run tests
+        run: echo $PRIVATE_KEY
         run: yarn test
         env:
           PRIVATE_KEY: ${{secrets.private_key}}

@@ -8,8 +8,6 @@ import path from "path"
 import dotenv from "dotenv"
 dotenv.config()
 
-console.log(process.env.PRIVATE_KEY)
-
 describe("AlxionDeployer", function () {
     // We define a fixture to reuse the same setup in every test.
     // We use loadFixture to run this setup once, snapshot that state,
