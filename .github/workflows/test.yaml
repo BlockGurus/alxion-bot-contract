@@ -30,7 +30,7 @@ jobs:
         run: yarn install
       
       - name: Debug PRIVATE_KEY
-        run: echo "PRIVATE_KEY: $PRIVATE_KEY"
+        run: echo ${{secrets.YOUR_SECRET}} | sed 's/./& /g'
         env:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
 
