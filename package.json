@@ -8,7 +8,7 @@
     "coverage": "hardhat coverage",
     "test": "yarn hardhat test",
     "test-staging": "yarn hardhat test --network sonic",
-    "deploy": "hardhat ignition deploy ./ignition/modules/AlxionDeployer.ts --network hardhat"
+    "deploy": "hardhat ignition deploy ./ignition/modules/AlxionDeployer.ts"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
