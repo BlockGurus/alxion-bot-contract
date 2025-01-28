@@ -84,7 +84,7 @@ describe("AlxionDeployer", function () {
         })
 
         describe("Transfers", function () {
-            it("Should transfer the funds to the owner", async function () {
+            it("Should be able to redeem points", async function () {
                 const { alxionToken, alxionDeployer, owner } = await loadFixture(
                     deployAlxionDeployerFixture
                 )
