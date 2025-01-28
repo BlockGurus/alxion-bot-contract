@@ -13,7 +13,6 @@ describe("AlxionDeployer", function () {
     // We use loadFixture to run this setup once, snapshot that state,
     // and reset Hardhat Network to that snapshot in every test.
     async function deployAlxionDeployerFixture() {
-        console.log({ privateKey: process.env.PRIVATE_KEY })
         // Contracts are deployed using the first signer/account by default
         const [owner, otherAccount] = await hre.ethers.getSigners()
 
